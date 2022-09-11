@@ -170,8 +170,105 @@
       <p class="news-title">У нас открылся новый магазин</p>
     </section>
 
+    <section class="subscription">
+      <h2 class="visually-hidden">Подписка</h2>
+      <p class="subscription-description">Подпишитесь на нашу рассылку и будьте всегда
+        в курсе всех наших новинок.</p>
+      <form class="subscription-form" action="" method="post">
+        <label>Email
+          <input class="field" placeholder="email@example.com" type="email" name="subscription-email"  required>
+        </label>
+        <button class="button subscription-button" type="submit">
+          <span class="visually-hidden">Отправить</span>
+        </button>
+      </form>
+    </section>
 
+    <section class="appointment">
+      <h2 class="visually-hidden">Оформление доставки</h2>
+      <p class="appointment-title">Доставка любимого напитка на дом</p>
+      <p class="appointment-description">Оформите быструю доставку наших напиткой, и курьер привезет все в течение часа!</p>
+      <div class="appointment-wrapper">
+        <p class="form-description">Укажите вашу контактную информацию, и оператор свяжется с вами</p>
+        <form class="appointment-form" action="" method="post">
+          <p class="appointment-form-date">
+            <label class="form-label">Дата
+              <input class="appointment-date" type="text" name="appointment-date" placeholder="02.10.2022">
+            </label>
+          </p>
+          <p class="appointment-form-phone">
+            <label class="form-label">Телефон
+              <input class="appointment-phone" type="tel" name="appointment-phone" placeholder="+7 812 222-10-10">
+            </label>
+          </p>
+          <p class="appointment-form-address">
+            <label class="form-label">Адрес
+              <input class="appointment-address" type="text" name="appointment-address" placeholder="ул. Боровая, д. 1">
+            </label>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts-wrapper">
+        <p class="contacts-address-title">Доедте до нас</p>
+        <address class="contacts-address">Санкт-Петербург, ул.Александра Невского, д.2</address>
+        <p class="contacts-phone-title">либо позвоните по телефону:</p>
+        <a class="contacts-phone" href="tel:+79111112233">+7-911-111-22-33</a>
+        <p class="contacts-time-description">с 10 до 22 ежедневно</p>
+
+        <a class="button button-feedback" href="#">Обратная связь</a>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+
+  <footer class="main-footer">
+    <section class="footer-social">
+      <h2 class="visually-hidden">Наши соцсети</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="gallery-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="gallery-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="useful-links">
+      <h2 class="visually-hidden">Полезные ссылки</h2>
+      <ul class="useful-links-list">
+        <li class="useful-links-item">
+          <a class="useful-links-link" href="#">Для поставщиков</a>
+        </li>
+        <li class="useful-links-item">
+          <a class="useful-links-link" href="#">О производстве</a>
+        </li>
+        <li class="useful-links-item">
+          <a class="useful-links-link" href="#">Наши документы</a>
+        </li>
+        <li class="useful-links-item">
+          <a class="useful-links-link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="about">
+      <img class="footer-logo" src="" alt="Логотип производителя">
+      <p class="about-text">made by ned @ 2022</p>
+    </div>
+  </footer>
   </body>
 </html>
