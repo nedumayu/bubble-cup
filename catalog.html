@@ -1,10 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Каталог</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+  <header class="main-header">
+    <nav class="navigation">
+      <a class="navigation-logo" href="index.html"><img class="main-header-logo" src="" alt="Логотип магазина Bubble Cup"></a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О нас</a>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="tel:+79111112233">+7-911-111-22-33</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Поиск</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Вход</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-</body>
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="inner-header-title">Каталог</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Каталог</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="catalog-products">
+      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+
+      <form class="catalog-filter" action="" method="get">
+        <fieldset class="catalog-filter-sort">
+          <legend class="catalog-filter-sort">Сортировка</legend>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">по популярности</option>
+              <option value="cheap">по цене (сначала дорогие)</option>
+              <option value="expensive">по цене (сначала дешевые)</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Количество сахара:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="zero-percent-sugar">
+                0%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="thirty-percent-sugar" checked>
+                30%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="fifty-percent-sugar">
+                50%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="seventy-five-percent-sugar">
+                75%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="hundred-percent-sugar">
+                100%
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Наполнители:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="ice-filler">
+                Лёд
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="fruits-filler" checked>
+                Фрукты
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="tea-filler" checked>
+                Чай
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="coffee-filler">
+                Кофе
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Применить</button>
+      </form>
+
+      <ul class="product-list">
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Вишня</h3>
+            <p class="product-card-description">Холодный молочный напиток с вишней и тапиокой</p>
+          </a>
+          <b class="product-card-price">240 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Шоколад</h3>
+            <p class="product-card-description">Холодный чай с шоколадом и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">160 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Кокос</h3>
+            <p class="product-card-description">Молочный улун с кокосовой стружкой</p>
+
+          </a>
+          <b class="product-card-price">230 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Клубника</h3>
+            <p class="product-card-description">Холодный молочный напиток с клубникой и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">170 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Лимон</h3>
+            <p class="product-card-description">Лимонад со льдом и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">200 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Киви</h3>
+            <p class="product-card-description">Холодный напиток с кусочками киви и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">210 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Клюква</h3>
+            <p class="product-card-description">Холодный чай с вишней и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">150 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Манго</h3>
+            <p class="product-card-description">Млочный коктейль с манго и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">250 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Маракуйя</h3>
+            <p class="product-card-description">Холодный молочный напиток с маракуйей и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">200 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Кофе</h3>
+            <p class="product-card-description">Ароматный кофе со льдом и шариками тапиоки</p>
+
+          </a>
+          <b class="product-card-price">170 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Персик</h3>
+            <p class="product-card-description">Молочный коктейль с персиком и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">140 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Малина</h3>
+            <p class="product-card-description">Холодный молочный напиток с малиной и тапиокой</p>
+
+          </a>
+          <b class="product-card-price">170 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </li>
+      </ul>
+
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-prev pagination-disabled">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">5</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-next" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
+        </li>
+      </ul>
+      <button class="button pagination-show-more" type="button">Показать ещё</button>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <section class="footer-social">
+      <h2 class="visually-hidden">Наши соцсети</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="gallery-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="gallery-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="useful-links">
+      <h2 class="visually-hidden">Полезные ссылки</h2>
+      <ul class="useful-links-list">
+        <li class="useful-links-item">
+          <a class="useful-links-link" href="#">Для поставщиков</a>
+        </li>
+        <li class="useful-links-item">
+          <a class="useful-links-link" href="#">О производстве</a>
+        </li>
+        <li class="useful-links-item">
+          <a class="useful-links-link" href="#">Наши документы</a>
+        </li>
+        <li class="useful-links-item">
+          <a class="useful-links-link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="about">
+      <img class="footer-logo" src="" alt="Логотип производителя">
+      <p class="about-text">made by ned @ 2022</p>
+    </div>
+  </footer>
+  </body>
 </html>
