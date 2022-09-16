@@ -24,4 +24,17 @@
 
 body {
   font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #2D3440;
 }
