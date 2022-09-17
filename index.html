@@ -22,7 +22,7 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="tel:+79111112233">+7-911-111-22-33</a>
+          <b><a class="navigation-link" href="tel:+79111112233">+7-911-111-22-33</a></b>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Поиск</a>
@@ -41,10 +41,10 @@
     <h1 class="visually-hidden">Магазин напитков Bubble cup</h1>
 
     <section class="gallery">
-      <h2 class="gallery-title">Галерея</h2>
-      <div class="gallery-description">
-        <p>Откройте для себя новый вкус Азии!</p>
-        <p>Экзотический напиток из Тайваня, который завоевал весь мир</p>
+      <h2 class="visually-hidden">Галерея</h2>
+      <div class="gallery-wrapper">
+        <p class="gallery-title">Откройте для себя новый вкус Азии!</p>
+        <p class="gallery-description">Экзотический напиток из Тайваня, который завоевал весь мир</p>
         <a class="button button-order" href="#">Заказать</a>
       </div>
 
@@ -99,13 +99,13 @@
 
     <section class="promo-actions">
       <h2 class="visually-hidden">Промоакции</h2>
-      <p>Заказывайте наш бабл ти и получайте подарки!</p>
-      <div class="promo-action-gift">
+      <p class="promo-actions-title">Заказывайте наш бабл ти и получайте подарки!</p>
+      <div class="promo-action-wrapper">
         <p class="promo-title">Три по цене двух</p>
         <p class="promo-description">При покупке 2 и более напитков бабл ти третий напиток в подарок</p>
-        <a class="button" href="#">Получить</a>
+        <a class="button button-gift" href="#">Получить</a>
       </div>
-      <div class="promo-action-card">
+      <div class="promo-action-wrapper">
         <p class="promo-title">Карта лояльности</p>
         <p class="promo-description">При оформлении первого заказа на сумму от 1000 рублей дарим карту лояльности аболютно бесплатно</p>
         <a class="button button-gift" href="#">Получить</a>
@@ -115,40 +115,49 @@
     <section class="assortment">
       <h2 class="visually-hidden">Ассортимент</h2>
       <p class="assortment-title">Попрбуйте наши самые лучшие вкусы бабл ти!</p>
-      <div class="assortment-strawberry-tea">
-        <img class="assortment-image strawberry-tea-image" src="" alt="Бабл ти с клубникой">
-        <h3 class="assortment-title">Клубника</h3>
-        <p class="assortment-description">Холодный клубничный бабл ти с шариками из тапиоки</p>
-        <b>150 ₽</b>
-        <button class="button-order" type="button">Купить</button>
-      </div>
-      <div class="assortment-blueberry-tea">
-        <img class="assortment-image blueberry-tea-image" src="" alt="Бабл ти с черникой">
-        <h3 class="assortment-title">Черника</h3>
-        <p class="assortment-description">Холодный Бабл ти из черники и лимона со льдом</p>
-        <b>150 ₽</b>
-        <button class="button-order" type="button">Купить</button>
-      </div>
-      <div class="assortment-classic-tea">
-        <img class="assortment-image classic-tea-image" src="" alt="Классический бабл ти">
-        <h3 class="assortment-title">Классика</h3>
-        <p class="assortment-description">Классический молочный чай с шариками</p>
-        <b>150 ₽</b>
-        <button class="button-order" type="button">Купить</button>
-      </div>
-      <div class="assortment-citrus-tea">
-        <img class="assortment-image citrus-tea-image" src="" alt="Цитрусовый бабл ти">
-        <h3 class="assortment-title">Цитрус</h3>
-        <p class="assortment-description">Прохладительный цитрусовый напиток со льдом и шариками</p>
-        <b>150 ₽</b>
-        <button class="button-order" type="button">Купить</button>
-      </div>
+      <ul class="product-list">
+        <li class="product-item">
+          <a class="product-link" href="#">
+            <img class="product-image" src="" alt="">
+            <h3 class="product-title">Вишня</h3>
+            <p class="product-description">Холодный молочный напиток с вишней и тапиокой</p>
+          </a>
+          <b class="product-price">240 ₽</b>
+          <a class="product-button button button-pink" href="#">Купить</a>
+        </li>
+        <li class="product-item">
+          <a class="product-link" href="#">
+            <img class="product-image" src="" alt="">
+            <h3 class="product-title">Шоколад</h3>
+            <p class="product-description">Холодный чай с шоколадом и тапиокой</p>
+          </a>
+          <b class="product-price">160 ₽</b>
+          <a class="product-button button button-pink" href="#">Купить</a>
+        </li>
+        <li class="product-item">
+          <a class="product-link" href="#">
+            <img class="product-image" src="" alt="">
+            <h3 class="product-title">Кокос</h3>
+            <p class="product-description">Молочный улун с кокосовой стружкой</p>
+          </a>
+          <b class="product-price">230 ₽</b>
+          <a class="product-button button button-pink" href="#">Купить</a>
+        </li>
+        <li class="product-item">
+          <a class="product-link" href="#">
+            <img class="product-image" src="" alt="">
+            <h3 class="product-title">Клубника</h3>
+            <p class="product-description">Холодный молочный напиток с клубникой и тапиокой</p>
+          </a>
+          <b class="product-price">170 ₽</b>
+          <a class="product-button button button-pink" href="#">Купить</a>
+        </li>
+      </ul>
     </section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <p class="advantages-title">Bubble Cup - магазин по продаже вкуснейших напитков бабл ти</p>
-
       <ul class="advantages-list">
         <li class="advantages-item">
           <p class="advantages-description">Чай для наших напитков производятся только из натурального сырья, выращенного на полях китайских провинций</p>
@@ -166,7 +175,7 @@
     </section>
 
     <section class="news">
-      <h2 class="visually hidden">Новости</h2>
+      <h2 class="visually-hidden">Новости</h2>
       <span class="news-sign">Новое в нашем блоге</span>
       <p class="news-title">У нас открылся новый магазин</p>
     </section>
@@ -179,14 +188,13 @@
         <label>Email
           <input class="field" placeholder="email@example.com" type="email" name="subscription-email"  required>
         </label>
-        <button class="button subscription-button" type="submit">
-          <span class="visually-hidden">Отправить</span>
-        </button>
+        <button class="button subscription-button button-pink" type="submit">Отправить</button>
       </form>
     </section>
 
     <section class="appointment">
       <h2 class="visually-hidden">Оформление доставки</h2>
+      <div class="appointment-sign"></div>
       <p class="appointment-title">Доставка любимого напитка на дом</p>
       <p class="appointment-description">Оформите быструю доставку наших напиткой, и курьер привезет все в течение часа!</p>
       <div class="appointment-wrapper">
@@ -207,7 +215,7 @@
               <input class="appointment-address" type="text" name="appointment-address" placeholder="ул. Боровая, д. 1">
             </label>
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button button-pink" type="submit">Отправить</button>
         </form>
       </div>
     </section>
@@ -221,7 +229,7 @@
         <a class="contacts-phone" href="tel:+79111112233">+7-911-111-22-33</a>
         <p class="contacts-time-description">с 10 до 22 ежедневно</p>
 
-        <a class="button button-feedback" href="#">Обратная связь</a>
+        <a class="button button-feedback button-pink" href="#">Обратная связь</a>
       </div>
     </section>
   </main>
@@ -252,7 +260,7 @@
       <h2 class="visually-hidden">Полезные ссылки</h2>
       <ul class="useful-links-list">
         <li class="useful-links-item">
-          <a class="useful-links-link" href="#">Для поставщиков</a>
+          <b><a class="useful-links-link" href="#">Для поставщиков</a></b>
         </li>
         <li class="useful-links-item">
           <a class="useful-links-link" href="#">О производстве</a>
