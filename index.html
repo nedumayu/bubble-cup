@@ -39,78 +39,89 @@
     </nav>
   </header>
 
-  <main class="main-index">
+  <main class="main-index main-container">
+    <div class="page-container">
     <h1 class="visually-hidden">Магазин напитков Bubble cup</h1>
 
     <section class="gallery">
+
       <h2 class="visually-hidden">Галерея</h2>
-      <div class="gallery-wrapper">
-        <p class="gallery-title">Откройте для себя новый вкус Азии!</p>
-        <p class="gallery-description">Экзотический напиток из Тайваня, который завоевал весь мир</p>
-        <a class="button button-order" href="#">Заказать</a>
+      <div class="gallery-container">
+        <div class="gallery-wrapper">
+          <p class="gallery-title">Откройте для себя новый вкус Азии!</p>
+          <p class="gallery-description">Экзотический напиток из Тайваня, который завоевал весь мир</p>
+          <a class="button button-order" href="#">Заказать</a>
+        </div>
+
+        <div class="gallery-slider">
+          <img class="slider-image" src="assets/slider-lime-tea.png" alt="Напитки bubble tea" width="306" height="507">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+
+        </div>
       </div>
 
-      <div class="gallery-slider">
-        <img class="slider-image" src="assets/slider-strawberry-tea.png" alt="Напитки bubble tea" width="306" height="507">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
+        <div class="gallery-container">
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
 
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ol>
+        <div class="gallery-social">
+          <ul class="gallery-social-list">
+            <li class="gallery-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="gallery-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="gallery-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="gallery-social">
-        <ul class="gallery-social-list">
-          <li class="gallery-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="gallery-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-          <li class="gallery-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
-      </div>
     </section>
+
 
     <section class="promo-actions">
       <h2 class="visually-hidden">Промоакции</h2>
       <p class="promo-actions-title">Заказывайте наш бабл ти и получайте подарки!</p>
-      <div class="promo-action-wrapper">
-        <p class="promo-title">Три по цене двух</p>
-        <p class="promo-description">При покупке 2 и более напитков бабл ти третий напиток в подарок</p>
-        <a class="button button-gift" href="#">Получить</a>
-      </div>
-      <div class="promo-action-wrapper">
-        <p class="promo-title">Карта лояльности</p>
-        <p class="promo-description">При оформлении первого заказа на сумму от 1000 рублей дарим карту лояльности аболютно бесплатно</p>
-        <a class="button button-gift" href="#">Получить</a>
+      <div class="promo-container">
+        <div class="promo-action-wrapper">
+          <p class="promo-title">Три по цене двух</p>
+          <p class="promo-description">При покупке 2 и более напитков бабл ти третий напиток в подарок</p>
+          <a class="button button-gift" href="#">Получить</a>
+        </div>
+        <div class="promo-action-wrapper">
+          <p class="promo-title">Карта лояльности</p>
+          <p class="promo-description">При оформлении первого заказа на сумму от 1000 рублей дарим карту лояльности аболютно бесплатно</p>
+          <a class="button button-gift" href="#">Получить</a>
+        </div>
       </div>
     </section>
 
@@ -160,45 +171,52 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <p class="advantages-title">Bubble Cup - магазин по продаже вкуснейших напитков бабл ти</p>
-      <ul class="advantages-list">
-        <li class="advantages-item">
-          <p class="advantages-description">Чай для наших напитков производятся только из натурального сырья, выращенного на полях китайских провинций</p>
-        </li>
-        <li class="advantages-item">
-          <p class="advantages-description">Для приготовления бабл ти используются только свежие фрукты и ягоды. Все остальные продукты закупаются у  сертифицированных партнеров</p>
-        </li>
-        <li class="advantages-item">
-          <p class="advantages-description">Bubble Cup предлагает на выбор самые разнообразные вкусы, которые никого не оставят равнодушным</p>
-        </li>
-        <li class="advantages-item">
-          <p class="advantages-description">Доставка бабл ти осуществляется нашими курьера, которые доставят товар в целостности и сохранности</p>
-        </li>
-      </ul>
+      <div class="advantages-list">
+        <ul class="advantages-list-column">
+          <li class="advantages-item">
+            <p class="advantages-description">Чай для наших напитков производятся только из натурального сырья, выращенного на полях китайских провинций</p>
+          </li>
+          <li class="advantages-item">
+            <p class="advantages-description">Для приготовления бабл ти используются только свежие фрукты и ягоды. Все остальные продукты закупаются у  сертифицированных партнеров</p>
+          </li>
+        </ul>
+        <ul class="advantages-list-column">
+          <li class="advantages-item">
+            <p class="advantages-description">Bubble Cup предлагает на выбор самые разнообразные вкусы, которые никого не оставят равнодушным</p>
+          </li>
+          <li class="advantages-item">
+            <p class="advantages-description">Доставка бабл ти осуществляется нашими курьера, которые доставят товар в целостности и сохранности</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="news">
-      <h2 class="visually-hidden">Новости</h2>
-      <span class="news-sign">Новое в нашем блоге</span>
-      <p class="news-title">У нас открылся новый магазин</p>
-    </section>
+    <div class="news-container">
+      <section class="news">
+        <h2 class="visually-hidden">Новости</h2>
+        <span class="news-sign">Новое в нашем блоге</span>
+        <p class="news-title">У нас открылся новый магазин</p>
+      </section>
 
-    <section class="subscription">
-      <h2 class="visually-hidden">Подписка</h2>
-      <p class="subscription-description">Подпишитесь на нашу рассылку и будьте всегда
-        в курсе всех наших новинок.</p>
-      <form class="subscription-form" action="" method="post">
-        <label>Email
-          <input class="field" placeholder="email@example.com" type="email" name="subscription-email"  required>
-        </label>
-        <button class="button subscription-button button-pink" type="submit">Отправить</button>
-      </form>
-    </section>
+      <section class="subscription">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p class="subscription-description">Подпишитесь на нашу рассылку и будьте всегда
+          в курсе всех наших новинок.</p>
+        <form class="subscription-form" action="" method="post">
+          <label>Email
+            <input class="field" placeholder="email@example.com" type="email" name="subscription-email"  required>
+          </label>
+          <button class="button subscription-button button-pink" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
 
     <section class="appointment">
       <h2 class="visually-hidden">Оформление доставки</h2>
-      <div class="appointment-sign"></div>
-      <p class="appointment-title">Доставка любимого напитка на дом</p>
-      <p class="appointment-description">Оформите быструю доставку наших напиткой, и курьер привезет все в течение часа!</p>
+      <div class="appointment-sign">
+        <p class="appointment-title">Доставка любимого напитка на дом</p>
+        <p class="appointment-description">Оформите быструю доставку наших напиткой, и курьер привезет все в течение часа!</p>
+      </div>
       <div class="appointment-wrapper">
         <p class="form-description">Укажите вашу контактную информацию, и оператор свяжется с вами</p>
         <form class="appointment-form" action="" method="post">
@@ -234,51 +252,54 @@
         <a class="button button-feedback button-pink" href="#">Обратная связь</a>
       </div>
     </section>
+    </div>
   </main>
 
   <footer class="main-footer">
-    <section class="footer-social">
-      <h2 class="visually-hidden">Наши соцсети</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="gallery-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-        <li class="gallery-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <div class="footer-container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Наши соцсети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="gallery-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="gallery-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="useful-links">
-      <h2 class="visually-hidden">Полезные ссылки</h2>
-      <ul class="useful-links-list">
-        <li class="useful-links-item">
-          <b><a class="useful-links-link" href="#">Для поставщиков</a></b>
-        </li>
-        <li class="useful-links-item">
-          <a class="useful-links-link" href="#">О производстве</a>
-        </li>
-        <li class="useful-links-item">
-          <a class="useful-links-link" href="#">Наши документы</a>
-        </li>
-        <li class="useful-links-item">
-          <a class="useful-links-link" href="#">Экологические стандарты</a>
-        </li>
-      </ul>
-    </section>
+      <section class="useful-links">
+        <h2 class="visually-hidden">Полезные ссылки</h2>
+        <ul class="useful-links-list">
+          <li class="useful-links-item">
+            <b><a class="useful-links-link" href="#">Для поставщиков</a></b>
+          </li>
+          <li class="useful-links-item">
+            <a class="useful-links-link" href="#">О производстве</a>
+          </li>
+          <li class="useful-links-item">
+            <a class="useful-links-link" href="#">Наши документы</a>
+          </li>
+          <li class="useful-links-item">
+            <a class="useful-links-link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </section>
 
-    <div class="about">
-      <img class="footer-logo" src="" alt="Логотип производителя">
-      <p class="about-text">made by ned @ 2022</p>
+      <div class="about">
+        <img class="footer-logo" src="" alt="Логотип производителя">
+        <p class="about-text">made by ned @ 2022</p>
+      </div>
     </div>
   </footer>
   </body>
