@@ -30,10 +30,10 @@
           <a class="navigation-link" href="#">Поиск</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Вход</a>
+          <a class="navigation-link" href="#"><span class="visually-hidden">Вход</span></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
+          <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span></a>
         </li>
       </ul>
     </nav>
@@ -44,7 +44,6 @@
     <h1 class="visually-hidden">Магазин напитков Bubble cup</h1>
 
     <section class="gallery">
-
       <h2 class="visually-hidden">Галерея</h2>
       <div class="gallery-container">
         <div class="gallery-wrapper">
@@ -61,11 +60,10 @@
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
-
         </div>
       </div>
 
-        <div class="gallery-container">
+        <div class="gallery-buttons-container">
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -110,7 +108,7 @@
 
     <section class="promo-actions">
       <h2 class="visually-hidden">Промоакции</h2>
-      <p class="promo-actions-title">Заказывайте наш бабл ти и получайте подарки!</p>
+      <p class="promo-actions-title">Заказывайте наш бабл ти <br> и получайте подарки!</p>
       <div class="promo-container">
         <div class="promo-action-wrapper">
           <p class="promo-title">Три по цене двух</p>
@@ -127,7 +125,7 @@
 
     <section class="assortment">
       <h2 class="visually-hidden">Ассортимент</h2>
-      <p class="assortment-title">Попрбуйте наши самые лучшие вкусы бабл ти!</p>
+      <p class="assortment-title">Попрбуйте наши самые лучшие <br> вкусы бабл ти!</p>
       <ul class="product-list">
         <li class="product-item">
           <a class="product-link" href="#">
@@ -142,16 +140,16 @@
           <a class="product-link" href="#">
             <img class="product-image" src="assets/catalog/coffee-bubble-tea.jpg" alt="Кофейный напиток" width="168" height="168">
             <h3 class="product-title">Кофе</h3>
-            <p class="product-description">Ароматный кофе с молоком и тапиокой</p>
+            <p class="product-description">Ароматный кофе с молоком и шариками тапиока</p>
           </a>
           <b class="product-price">160 ₽</b>
           <a class="product-button button button-pink" href="#">Купить</a>
         </li>
         <li class="product-item">
           <a class="product-link" href="#">
-            <img class="product-image" src="assets/catalog/coconut-bubble-tea.jpg" alt="Кокосовый напиток" width="168" height="168">
-            <h3 class="product-title">Кокос</h3>
-            <p class="product-description">Молочный улун с кокосовой стружкой</p>
+            <img class="product-image" src="assets/catalog/kiwi-bubble-tea.jpg" alt="Киви напиток" width="168" height="168">
+            <h3 class="product-title">Киви</h3>
+            <p class="product-description">Холодный напиток с кусочками киви и тапиокой</p>
           </a>
           <b class="product-price">230 ₽</b>
           <a class="product-button button button-pink" href="#">Купить</a>
@@ -195,7 +193,7 @@
       <section class="news">
         <h2 class="visually-hidden">Новости</h2>
         <span class="news-sign">Новое в нашем блоге</span>
-        <p class="news-title">У нас открылся новый магазин</p>
+        <p class="news-title">У нас открылся новый <br> магазин</p>
       </section>
 
       <section class="subscription">
@@ -243,9 +241,9 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts-wrapper">
-        <p class="contacts-address-title">Доедте до нас</p>
+        <p class="contacts-title">Доедте до нас</p>
         <address class="contacts-address">Санкт-Петербург, ул.Александра Невского, д.2</address>
-        <p class="contacts-phone-title">либо позвоните по телефону:</p>
+        <p class="contacts-title">либо позвоните по телефону:</p>
         <a class="contacts-phone" href="tel:+79111112233">+7-911-111-22-33</a>
         <p class="contacts-time-description">с 10 до 22 ежедневно</p>
 
@@ -259,8 +257,8 @@
     <div class="footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Наши соцсети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
+        <ul class="gallery-social-list">
+          <li class="gallery-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
@@ -280,24 +278,28 @@
 
       <section class="useful-links">
         <h2 class="visually-hidden">Полезные ссылки</h2>
-        <ul class="useful-links-list">
-          <li class="useful-links-item">
-            <b><a class="useful-links-link" href="#">Для поставщиков</a></b>
-          </li>
-          <li class="useful-links-item">
-            <a class="useful-links-link" href="#">О производстве</a>
-          </li>
-          <li class="useful-links-item">
-            <a class="useful-links-link" href="#">Наши документы</a>
-          </li>
-          <li class="useful-links-item">
-            <a class="useful-links-link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
+        <div class="useful-links-list">
+          <ul class="useful-links-column">
+            <li class="useful-links-item">
+              <b><a class="useful-links-link" href="#">Для поставщиков</a></b>
+            </li>
+            <li class="useful-links-item">
+              <a class="useful-links-link" href="#">О производстве</a>
+            </li>
+          </ul>
+          <ul class="useful-links-column">
+            <li class="useful-links-item">
+              <a class="useful-links-link" href="#">Наши документы</a>
+            </li>
+            <li class="useful-links-item">
+              <a class="useful-links-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <div class="about">
-        <img class="footer-logo" src="" alt="Логотип производителя">
+        <img class="footer-logo" src="assets/logo-ned.svg" alt="Логотип производителя" width="93" height="27">
         <p class="about-text">made by ned @ 2022</p>
       </div>
     </div>

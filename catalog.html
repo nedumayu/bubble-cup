@@ -24,16 +24,16 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="tel:+79111112233">+7-911-111-22-33</a>
+          <b><a class="navigation-link" href="tel:+79111112233">+7-911-111-22-33</a></b>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Поиск</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Вход</a>
+          <a class="navigation-link" href="#"><span class="visually-hidden">Вход</span></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
+          <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span></a>
         </li>
       </ul>
     </nav>
@@ -42,7 +42,6 @@
   <main class="main-inner main-container">
     <div class="page-container">
     <header class="inner-header">
-      <h1 class="inner-header-title">Каталог</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -51,6 +50,7 @@
           <a class="breadcrumbs-link">Каталог</a>
         </li>
       </ul>
+      <h1 class="inner-header-title">Каталог</h1>
     </header>
 
     <section class="catalog-products">
@@ -293,8 +293,8 @@
     <div class="footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Наши соцсети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
+        <ul class="gallery-social-list">
+          <li class="gallery-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
@@ -314,24 +314,28 @@
 
       <section class="useful-links">
         <h2 class="visually-hidden">Полезные ссылки</h2>
-        <ul class="useful-links-list">
-          <li class="useful-links-item">
-            <a class="useful-links-link" href="#">Для поставщиков</a>
-          </li>
-          <li class="useful-links-item">
-            <a class="useful-links-link" href="#">О производстве</a>
-          </li>
-          <li class="useful-links-item">
-            <a class="useful-links-link" href="#">Наши документы</a>
-          </li>
-          <li class="useful-links-item">
-            <a class="useful-links-link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
+        <div class="useful-links-list">
+          <ul class="useful-links-column">
+            <li class="useful-links-item">
+              <b><a class="useful-links-link" href="#">Для поставщиков</a></b>
+            </li>
+            <li class="useful-links-item">
+              <a class="useful-links-link" href="#">О производстве</a>
+            </li>
+          </ul>
+          <ul class="useful-links-column">
+            <li class="useful-links-item">
+              <a class="useful-links-link" href="#">Наши документы</a>
+            </li>
+            <li class="useful-links-item">
+              <a class="useful-links-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <div class="about">
-        <img class="footer-logo" src="" alt="Логотип производителя">
+        <img class="footer-logo" src="assets/logo-ned.svg" alt="Логотип производителя" width="93" height="27">
         <p class="about-text">made by ned @ 2022</p>
       </div>
     </div>
