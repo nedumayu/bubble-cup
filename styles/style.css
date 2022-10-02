@@ -263,12 +263,13 @@ body {
   margin-bottom: 80px;
 }
 
-.product-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+.catalog-list {
   padding: 0;
   margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
 }
 
 .product-item {
@@ -276,6 +277,16 @@ body {
   width: 190px;
   padding: 0 40px 30px 40px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 51px;
+}
+
+.price-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto
 }
 
 .product-link {
@@ -295,7 +306,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 0 0 107px 0;
+  margin: 0 0 56px 0;
 }
 
 .product-title {
@@ -421,6 +432,32 @@ body {
   padding: 40px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
+}
+
+.appointment-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 16px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.appointment-form .info {
+  display: none;
+}
+
+.appointment-form-address {
+  grid-column: 1/-1;
+}
+
+.form-button {
+  grid-column: 1/-1;
+  width: auto;
+  justify-self: center;
 }
 
 .form-description {
@@ -573,7 +610,7 @@ body {
 
 .catalog-filter {
   width: 807px;
-  margin-bottom: 100px;
+  margin-bottom: 48px;
 }
 
 .filter-wrapper {
@@ -605,26 +642,9 @@ body {
   display: flex;
 }
 
-.catalog-list {
-  padding: 0;
-  margin: 0 0 -74px 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.catalog-list .product-item {
-  margin-right: 30px;
-  margin-bottom: 90px;
-}
-
-.catalog-list .product-item:nth-child(4n) {
-  margin-right: 0;
-}
-
 .pagination-wrapper {
   display: flex;
-  padding: 41px 0;
+  padding: 57px 0 81px 0;
 }
 
 .pagination-show-more {

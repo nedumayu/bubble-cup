@@ -125,16 +125,18 @@
 
     <section class="assortment">
       <h2 class="visually-hidden">Ассортимент</h2>
-      <p class="assortment-title">Попрбуйте наши самые лучшие <br> вкусы бабл ти!</p>
-      <ul class="product-list">
+      <p class="assortment-title">Попробуйте наши самые лучшие <br> вкусы бабл ти!</p>
+      <ul class="catalog-list">
         <li class="product-item">
           <a class="product-link" href="#">
             <img class="product-image" src="assets/catalog/cherry-bubble-tea.jpg" alt="Вишневый напиток" width="168" height="168">
             <h3 class="product-title">Вишня</h3>
             <p class="product-description">Холодный молочный напиток с вишней и тапиокой</p>
           </a>
+          <div class="price-button-wrapper">
           <b class="product-price">240 ₽</b>
           <a class="product-button button button-pink" href="#">Купить</a>
+          </div>
         </li>
         <li class="product-item">
           <a class="product-link" href="#">
@@ -142,8 +144,10 @@
             <h3 class="product-title">Кофе</h3>
             <p class="product-description">Ароматный кофе с молоком и шариками тапиока</p>
           </a>
+          <div class="price-button-wrapper">
           <b class="product-price">160 ₽</b>
           <a class="product-button button button-pink" href="#">Купить</a>
+          </div>
         </li>
         <li class="product-item">
           <a class="product-link" href="#">
@@ -151,8 +155,10 @@
             <h3 class="product-title">Киви</h3>
             <p class="product-description">Холодный напиток с кусочками киви и тапиокой</p>
           </a>
+          <div class="price-button-wrapper">
           <b class="product-price">230 ₽</b>
           <a class="product-button button button-pink" href="#">Купить</a>
+          </div>
         </li>
         <li class="product-item">
           <a class="product-link" href="#">
@@ -160,8 +166,10 @@
             <h3 class="product-title">Клубника</h3>
             <p class="product-description">Холодный молочный напиток с клубникой и тапиокой</p>
           </a>
+          <div class="price-button-wrapper">
           <b class="product-price">170 ₽</b>
           <a class="product-button button button-pink" href="#">Купить</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -218,22 +226,23 @@
       <div class="appointment-wrapper">
         <p class="form-description">Укажите вашу контактную информацию, и оператор свяжется с вами</p>
         <form class="appointment-form" action="" method="post">
-          <p class="appointment-form-date">
-            <label class="form-label">Дата
-              <input class="appointment-date" type="text" name="appointment-date" placeholder="02.10.2022">
+          <p class="field-group appointment-form-date">
+            <label class="form-label" for="appointment-date">Дата
+              <button class="info"><span class="visually-hidden">Посмотреть информацию</span></button>
             </label>
+            <input class="appointment-date" id="appointment-date" type="text" name="appointment-date" placeholder="02.10.2022">
           </p>
-          <p class="appointment-form-phone">
-            <label class="form-label">Телефон
-              <input class="appointment-phone" type="tel" name="appointment-phone" placeholder="+7 812 222-10-10">
+          <p class="field-group appointment-form-phone">
+            <label class="form-label" for="appointment-phone">Телефон</label>
+            <input class="appointment-phone" id="appointment-phone" type="tel" name="appointment-phone" placeholder="+7 812 222-10-10">
+          </p>
+          <p class="field-group appointment-form-address">
+            <label class="form-label" for="appointment-address">Адрес
+              <button class="info"><span class="visually-hidden">Посмотреть информацию</span></button>
             </label>
+            <input class="appointment-address" id="appointment-address" type="text" name="appointment-address" placeholder="ул. Боровая, д. 1">
           </p>
-          <p class="appointment-form-address">
-            <label class="form-label">Адрес
-              <input class="appointment-address" type="text" name="appointment-address" placeholder="ул. Боровая, д. 1">
-            </label>
-          </p>
-          <button class="button button-pink" type="submit">Отправить</button>
+          <button class="button button-pink form-button" type="submit">Отправить</button>
         </form>
       </div>
     </section>
