@@ -113,7 +113,7 @@ body {
 
 /*header*/
 
-.navigation{
+.navigation {
   display: flex;
   width: 1170px;
   margin: 0 auto;
@@ -199,11 +199,6 @@ body {
   display: flex;
 }
 
-.gallery-buttons-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .gallery-wrapper {
   width: 470px;
   padding: 136px 0 138px 70px;
@@ -223,9 +218,68 @@ body {
   margin: 0 0 48px 0;
 }
 
-.slider-pagination {
+/*slider*/
+
+.gallery-slider {
   display: flex;
-  list-style: none;
+  align-items: center;
+}
+
+.slider-current {
+  position: relative;
+  width: 312px;
+  height: 312px;
+  background-color: #FFCBD8;
+  border-radius: 50%;
+  margin-right: 56px;
+}
+
+.slider-image {
+  display: block;
+  position: absolute;
+  top: -100px;
+  width: 290px;
+  right: 10px;
+}
+
+.slide-next-first, .slide-next-second {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 203, 216, 0.4);
+  border-radius: 50%;
+  margin-right: 41px;
+}
+
+.slide-next-second {
+  margin-right: 0;
+}
+
+.slider-next-image {
+  width: 80px;
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  top: -20px;
+  right: 10px;
+}
+
+.slider-next-image-first{
+  width: 100px;
+  top: -40px;
+  right: 0;
+}
+
+/*slider arrows*/
+
+.slider-buttons-wrapper {
+  position: absolute;
+  top: 50%;
+  left: -19px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
 }
 
 .slider-button {
@@ -255,7 +309,7 @@ body {
   border: 1px solid #2D3440;
 }
 
-.slider-button:focus .slider-icon{
+.slider-button:focus .slider-icon {
   color: #2D3440;
 }
 
@@ -264,6 +318,16 @@ body {
 }
 
 /*pagination*/
+
+.slider-pagination-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-pagination-list {
+  display: flex;
+  list-style: none;
+}
 
 .slider-pagination-button {
   display: block;
@@ -280,12 +344,13 @@ body {
 }
 
 .slider-pagination-button:hover {
-  border: 1px solid #FCFCFC;
+  outline: 1px solid #FCFCFC;
 }
 
-.slider-pagination-button:focus{
-  border: 1px solid #2D3440;
+.slider-pagination-button:focus {
+  outline: 1px solid #2D3440;
 }
+
 /*social*/
 
 .gallery-social-list {
@@ -300,7 +365,7 @@ body {
   display: block;
   width: 24px;
   height: 24px;
-  border: 1px solid rgba(252, 252, 252, 0.3);
+  border: 2px solid rgba(252, 252, 252, 0.3);
   border-radius: 50%;
   margin-right: 16px;
 }
@@ -312,6 +377,7 @@ body {
 .gallery-social-item:hover {
   background-color: #2D3440;
 }
+
 /*promo*/
 
 .promo-actions {
@@ -452,10 +518,8 @@ body {
 }
 
 .product-button:hover {
-  width: 22px;
-  height: 22px;
   background-color: #FCFCFC;
-  border: 1px solid #FF2F64;
+  outline: 1px solid #FF2F64;
 }
 
 .product-button:hover .product-icon {
@@ -463,9 +527,7 @@ body {
 }
 
 .product-button:focus {
-  width: 22px;
-  height: 22px;
-  border: 1px solid #2D3440;
+  outline: 1px solid #2D3440;
 }
 
 .product-button:disabled {
@@ -479,7 +541,7 @@ body {
 .product-icon {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -538,7 +600,7 @@ body {
   margin-right: 16px;
   border: 2px solid black;
   border-radius: 50%;
-  background-size: 32px 32px ;
+  background-size: 32px 32px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -599,6 +661,10 @@ body {
 .subscription-description {
   color: #565C66;
   margin: 0 0 40px 0;
+}
+
+.subscription-button {
+  margin-left: 24px;
 }
 
 /*delivery*/
@@ -671,6 +737,41 @@ body {
 
 .form-label {
   font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.field {
+  margin: 0;
+  padding: 14px 16px;
+  font: inherit;
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.field:hover {
+  border: 1px solid #2D3440;
+}
+
+.field:focus {
+  border: 2px solid #2D3440;
+}
+
+.field:invalid {
+  border: 1px solid #EA5454;
+}
+
+.field:focus:invalid {
+  border: 2px solid #EA5454;
+}
+
+.field:disabled {
+  background: #E7E7E7;
+  border: 1px solid #B9B9B9;
+}
+
+.field::placeholder {
+  color: #B9B9B9;
 }
 
 /*contacts*/
@@ -816,7 +917,7 @@ body {
   top: 5px;
   right: -20px;
   display: inline-block;
-  background-size: 12px 12px ;
+  background-size: 12px 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../assets/icons/chevrons-right.svg");
@@ -902,17 +1003,13 @@ body {
 }
 
 .pagination-link:hover {
-  width: 22px;
-  height: 22px;
   background: rgba(252, 252, 252, 0.3);
-  border: 1px solid #FCFCFC;
+  outline: 1px solid #FCFCFC;
 }
 
 .pagination-link:focus {
-  width: 22px;
-  height: 22px;
   background: rgba(252, 252, 252, 0.3);
-  border: 1px solid #2D3440;
+  outline: 1px solid #2D3440;
 }
 
 /*.pagination-prev {*/
