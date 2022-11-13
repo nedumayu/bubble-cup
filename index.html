@@ -37,7 +37,18 @@
                   d="M1.91286 7.24625C1.91286 4.30073 4.30068 1.91292 7.2462 1.91292C10.1917 1.91292 12.5795 4.30073 12.5795 7.24625C12.5795 8.68547 12.0095 9.99154 11.0828 10.951C11.0582 10.9695 11.0346 10.99 11.0123 11.0124C10.9899 11.0347 10.9694 11.0583 10.9509 11.0829C9.99146 12.0095 8.6854 12.5796 7.2462 12.5796C4.30068 12.5796 1.91286 10.1918 1.91286 7.24625ZM11.4653 12.4082C10.3161 13.3487 8.84703 13.9129 7.2462 13.9129C3.5643 13.9129 0.579529 10.9281 0.579529 7.24625C0.579529 3.56435 3.5643 0.579582 7.2462 0.579582C10.9281 0.579582 13.9129 3.56435 13.9129 7.24625C13.9129 8.84711 13.3486 10.3162 12.4081 11.4654L15.2176 14.2749C15.4779 14.5352 15.4779 14.9573 15.2176 15.2177C14.9572 15.478 14.5351 15.478 14.2748 15.2177L11.4653 12.4082Z"
                   fill="#2D3440"/>
           </svg>
-          <span class="visually-hidden">Поиск</span></a>
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <div class="popover popover-search popover-open">
+          <div class="popover-content">
+            <form class="auth-form" action="" method="post">
+              <p class="field-group">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input class="search-field field" type="text" id="search" name="search" placeholder="Поиск по сайту">
+              </p>
+            </form>
+          </div>
+        </div>
       </li>
 
       <li class="navigation-item">
@@ -48,7 +59,32 @@
                   d="M9.20837 0.874999C9.20837 0.506809 9.50685 0.208332 9.87504 0.208332H12.875C13.4497 0.208332 14.0008 0.436605 14.4071 0.842934C14.8134 1.24926 15.0417 1.80036 15.0417 2.375V12.875C15.0417 13.4496 14.8134 14.0007 14.4071 14.4071C14.0008 14.8134 13.4497 15.0417 12.875 15.0417H9.87504C9.50685 15.0417 9.20837 14.7432 9.20837 14.375C9.20837 14.0068 9.50685 13.7083 9.87504 13.7083H12.875C13.0961 13.7083 13.308 13.6205 13.4643 13.4643C13.6206 13.308 13.7084 13.096 13.7084 12.875V2.375C13.7084 2.15399 13.6206 1.94202 13.4643 1.78574C13.308 1.62946 13.0961 1.54167 12.875 1.54167H9.87504C9.50685 1.54167 9.20837 1.24319 9.20837 0.874999ZM5.65359 3.40359C5.91394 3.14324 6.33605 3.14324 6.5964 3.40359L10.3418 7.14903C10.4652 7.27002 10.5417 7.43857 10.5417 7.625C10.5417 7.81143 10.4652 7.97999 10.3418 8.10098L6.5964 11.8464C6.33605 12.1068 5.91394 12.1068 5.65359 11.8464C5.39324 11.5861 5.39324 11.1639 5.65359 10.9036L8.26552 8.29167H0.875041C0.506851 8.29167 0.208374 7.99319 0.208374 7.625C0.208374 7.25681 0.506851 6.95833 0.875041 6.95833H8.26552L5.65359 4.3464C5.39324 4.08605 5.39324 3.66394 5.65359 3.40359Z"
                   fill="#2D3440"/>
           </svg>
-          <span>Вход</span></a>
+          <span>Вход</span>
+        </a>
+        <div class="popover popover-auth popover-open">
+          <div class="popover-content">
+            <h2 class="popover-title">Личный кабинет</h2>
+            <form class="auth-form" action="" method="post">
+              <p class="field-group">
+                <label class="visually-hidden" for="popover-email">E-mail</label>
+                <input class="email-field field" type="email" id="popover-email" name="email"
+                       placeholder="email@gmail.com">
+              </p>
+              <p class="field-group">
+                <label class="visually-hidden" for="auth-password">Пароль</label>
+                <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
+                       placeholder="Пароль">
+              </p>
+              <div class="auth-buttons-group">
+                <button class="button button-pink auth-form-button" type="submit">Войти</button>
+                <div class="popover-links-group">
+                  <a class="auth-links auth-form-recovery" href="#">Забыли пароль?</a>
+                  <a class="auth-links auth-form-register" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </li>
 
       <li class="navigation-item">
@@ -59,7 +95,13 @@
                   d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z"
                   fill="#2D3440"/>
           </svg>
-          <span>Пусто</span></a>
+          <span>Пусто</span>
+        </a>
+        <div class="popover popover-cart popover-open">
+          <div class="popover-content">
+            <h2 class="popover-title cart-title">Ваша корзина пока пуста</h2>
+          </div>
+        </div>
       </li>
 
     </ul>
@@ -104,8 +146,6 @@
               </button>
             </div>
           </div>
-
-          <!--          <div class="slides-next">-->
           <div class="slide-next-first">
             <img class="slider-next-image slider-next-image-first" src="assets/slider-strawberry-tea.png"
                  alt="Бабл ти с клубникой">
@@ -113,8 +153,6 @@
           <div class="slide-next-second">
             <img class="slider-next-image" src="assets/slider-coffee-tea.png" alt="Бабл ти с кофе">
           </div>
-          <!--          </div>-->
-
         </div>
       </div>
 
@@ -281,7 +319,7 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p class="advantages-title">Bubble Cup - магазин по продаже вкуснейших напитков бабл ти</p>
+      <p class="advantages-title">Bubble Cup - магазин по продаже <br> вкуснейших напитков бабл ти</p>
       <div class="advantages-list">
         <ul class="advantages-list-column">
           <li class="advantages-item advantages-leaf">
@@ -339,9 +377,22 @@
 
         <form class="appointment-form" action="" method="post">
           <p class="field-group appointment-form-date">
+            <span class="form-label form-label-icon">
             <label class="form-label" for="appointment-date">Дата
-              <button class="info"><span class="visually-hidden">Посмотреть информацию</span></button>
+              <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.00032 2.12508C4.3078 2.12508 2.12508 4.3078 2.12508 7.00032C2.12508 9.69284 4.3078 11.8756 7.00032 11.8756C9.69284 11.8756 11.8756 9.69284 11.8756 7.00032C11.8756 4.3078 9.69284 2.12508 7.00032 2.12508ZM0.791748 7.00032C0.791748 3.57142 3.57142 0.791748 7.00032 0.791748C10.4292 0.791748 13.2089 3.57142 13.2089 7.00032C13.2089 10.4292 10.4292 13.2089 7.00032 13.2089C3.57142 13.2089 0.791748 10.4292 0.791748 7.00032ZM7.00013 6.3334C7.36832 6.3334 7.6668 6.63188 7.6668 7.00007V9.21683C7.6668 9.58502 7.36832 9.8835 7.00013 9.8835C6.63194 9.8835 6.33347 9.58502 6.33347 9.21683V7.00007C6.33347 6.63188 6.63194 6.3334 7.00013 6.3334ZM7.00013 4.11665C6.63194 4.11665 6.33347 4.41513 6.33347 4.78332C6.33347 5.1515 6.63194 5.44998 7.00013 5.44998H7.00597C7.37416 5.44998 7.67263 5.1515 7.67263 4.78332C7.67263 4.41513 7.37416 4.11665 7.00597 4.11665H7.00013Z"
+                            fill="currentColor"/>
+                    </svg>
+
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-date-label">Укажите желаемую дату</span>
+                </span>
+
             </label>
+            </span>
             <input class="field" id="appointment-date" type="text" name="appointment-date"
                    placeholder="02.10.2022">
           </p>
@@ -351,9 +402,21 @@
                    placeholder="+7 812 222-10-10">
           </p>
           <p class="field-group appointment-form-address">
+            <span class="form-label form-label-icon">
             <label class="form-label" for="appointment-address">Адрес
-              <button class="info"><span class="visually-hidden">Посмотреть информацию</span></button>
+              <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.00032 2.12508C4.3078 2.12508 2.12508 4.3078 2.12508 7.00032C2.12508 9.69284 4.3078 11.8756 7.00032 11.8756C9.69284 11.8756 11.8756 9.69284 11.8756 7.00032C11.8756 4.3078 9.69284 2.12508 7.00032 2.12508ZM0.791748 7.00032C0.791748 3.57142 3.57142 0.791748 7.00032 0.791748C10.4292 0.791748 13.2089 3.57142 13.2089 7.00032C13.2089 10.4292 10.4292 13.2089 7.00032 13.2089C3.57142 13.2089 0.791748 10.4292 0.791748 7.00032ZM7.00013 6.3334C7.36832 6.3334 7.6668 6.63188 7.6668 7.00007V9.21683C7.6668 9.58502 7.36832 9.8835 7.00013 9.8835C6.63194 9.8835 6.33347 9.58502 6.33347 9.21683V7.00007C6.33347 6.63188 6.63194 6.3334 7.00013 6.3334ZM7.00013 4.11665C6.63194 4.11665 6.33347 4.41513 6.33347 4.78332C6.33347 5.1515 6.63194 5.44998 7.00013 5.44998H7.00597C7.37416 5.44998 7.67263 5.1515 7.67263 4.78332C7.67263 4.41513 7.37416 4.11665 7.00597 4.11665H7.00013Z"
+                            fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-address-label">Введите название дома, улицы и квартиры</span>
+                </span>
+
             </label>
+            </span>
             <input class="field" id="appointment-address" type="text" name="appointment-address"
                    placeholder="ул. Боровая, д. 1">
           </p>
@@ -446,5 +509,36 @@
     </div>
   </div>
 </footer>
+
+<div class="modal-container modal-container-close">
+  <div class="modal modal-feedback">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+      <form class="feedback-form" action="" method="post">
+        <p class="field-group">
+          <label class="visually-hidden" for="username">Имя и фамилия</label>
+          <input class="username-field field" type="text" id="username" name="username" placeholder="Имя и фамилия">
+        </p>
+
+        <p class="field-group">
+          <label class="visually-hidden" for="email">E-mail</label>
+          <input class="email-field field" type="email" id="email" name="email" placeholder="email@gmail.com">
+        </p>
+
+        <p class="field-group">
+          <label class="visually-hidden" for="comment">E-mail</label>
+          <textarea class="comment-field field" type="email" id="comment" name="comment"
+                    placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button button-pink feedback-button" type="submit">Отправить</button>
+      </form>
+
+    </section>
+  </div>
+</div>
+
 </body>
 </html>
