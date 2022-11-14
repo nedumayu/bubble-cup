@@ -39,6 +39,11 @@ body {
   background-color: #ffffff;
 }
 
+.img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -176,6 +181,10 @@ body {
 .main-header-logo {
   display: block;
   margin-right: 16px;
+}
+
+.main-header-logo:hover {
+  filter: drop-shadow(0px 3px 3px rgba(255, 47, 100, 0.4));
 }
 
 /*popover*/
@@ -816,6 +825,9 @@ body {
   padding: 30px;
   border-radius: 16px;
   background-image: url("../assets/background-small.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news-title {
@@ -858,8 +870,9 @@ body {
   border-radius: 16px;
   padding: 64px;
   background-image: url("../assets/background-middle.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .appointment-sign {
@@ -1026,8 +1039,9 @@ body {
   border-radius: 16px;
   padding: 64px;
   background-image: url("../assets/background-big.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .contacts-wrapper {
